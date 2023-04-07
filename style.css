@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'klavika-medium';
+    src: url('/assets/font/klavika-medium-webfont.woff') format('truetype');
+  }
+  @font-face {
+    font-family: 'klavika-regular';
+    src: url('/assets/font/klavika-regular-webfont.woff') format('truetype');
+  }
+
+
+.main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+}
+.img{
+    position: absolute;
+    background: url('./assets/images/background.jpg');
+    background-size:cover;
+    width: 7000px;
+    height: 100%;
+    transition: 1s;
+}
+
+body{
+    margin: 0px;
+}
+
+.bi{
+    color:white;
+    font-size: 50px;
+    top:50%;
+    height: 10%;
+    padding-top: 1.5%;
+}
+
+.bi-chevron-double-left{
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.481);
+}
+.bi-chevron-double-right{
+    position: fixed;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.481);
+}
+
+#text{
+   font-family: 'klavika-regular';
+    transition: 0.2s;
+    color: white;
+    margin-left: 20px;
+    font-size: 40px;
+    width: 30%;
+    text-decoration: underline;
+    word-wrap:normal;
+    
+}
+
+#align{
+    position: fixed;
+    width: 100%;
+    left:3%
+
+}
+
+#content{
+    display: none;
+}
+#intro{
+
+
+
+}
+
+#intro img{
+    
+    position: absolute;
+    top:45%;
+    left:45%;
+animation: monk 4s;
+
+}
+
+@keyframes monk {
+    0%{
+        width: 10px;
+    }
+    10%{
+        top: 45%;
+        left:45%;
+        width:120px;
+    }
+    20%{
+        top: 45%;
+        left:45%;
+        width: 90px;
+    }
+    30%{
+        top: 45%;
+        left:45%;
+        width: 105px;
+    }
+    40%{
+        top: 45%;
+        left:45%;
+        width: 100px;
+    }
+    60%{
+        top: 44%;
+        left:45%;
+        width: 100px;
+    }80%{
+        top: 45%;
+        left:45%;
+        width: 100px;
+    }100%{
+        top: 45%;
+        left:45%;
+        width: 100px;
+    }
+
+}
+
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    100%{opacity:1}
+  }
+  .text{
+    position: absolute;color:white;top:65%;left:45%;
+    opacity:0;
+    font-family: 'klavika-regular';
+    animation: fade-in 3s 1s;
+
+  }
+  #tex {
+    opacity: 0;
+    animation: fade-in 3s 2s;
+    animation-fill-mode:forwards;
+  }
+  
+  #tex.fade-out {
+    animation-name: fade-out;
+  }
+  
+  #tex.fade-in {
+    animation-name: fade-in;
+  }
+
+  .foot{
+    left:1%;
+    position:fixed;
+    color:white;
+    bottom:30px;
+    font-family: 'klavika-regular';
+  }
+
+  .foot div span{
+    text-align: center;
+    border-right: 2px dotted white;
+        height: 20px;
+        width: 40px;
+
+  }
+
+
+  .last{
+    position: fixed;
+    top:45%;
+    right:1%;
+    color:white;
+    text-align: right;
+    font-family: 'klavika-regular';
+    font-size: 12px;
+
+  }
+
+  
+  .last span i{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
